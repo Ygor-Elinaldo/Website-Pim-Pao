@@ -1,151 +1,158 @@
-    <html>
-        <head>
-            <link rel="stylesheet" href="/resources/style.css">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <meta name="theme-color" content="#44232a" >
-            <link rel="preload" href="/resources/fonts/Nunito-Font.ttf" as="font" type="font/truetype" crossorigin>
-            <title>Pim Pão</title>
-            <style>
-                .page {
-                    transition: opacity 0.9s ease-in-out;
-                }
-            </style>
-        </head>
-    
-        <body>
-            <div class="top-bar">
-                <a id="navigationHome" onclick="showPage('pg1')" href="#">Home</a>
-                <a id="navigationCardapio" onclick="showPage('pg2')" href="#menu">Cardápio</a>
-                <a id="navigationContato" onclick="showPage('pg3')" href="#contato">Contato</a>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#44232a">
+    <link rel="stylesheet" href="/resources/style.css">
+    <link rel="preload" href="/resources/fonts/Nunito-Font.ttf" as="font" type="font/truetype" crossorigin>
+    <title>Pim Pão</title>
+    <style>
+        .page {
+            transition: opacity 0.9s ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top-bar">
+        <a id="navigationHome" onclick="showPage('pg1')" href="#">Home</a>
+        <a id="navigationCardapio" onclick="showPage('pg2')" href="#menu">Cardápio</a>
+        <a id="navigationContato" onclick="showPage('pg3')" href="#contato">Contato</a>
+    </div>
+
+    <section class="page" id="pg1">
+        <section class="header-container">
+            <img loading="lazy" class="main" src="/resources/img/Pim Pão - 2021-08-01.jpg" />
+            <div>
+                <img loading="lazy" src="/resources/logo/Pim-Pão Banner.jpg" />
+                <h1>Panificadora e Confeitaria</h1>
+                <p>Trazendo o melhor do artesanal.</p>
             </div>
-    
-            <section class="page" id="pg1">
-                <section class="header-container">
-                    <img loading="lazy" class="main" src="resources/img/Pim Pão - 2021-08-01.jpg"/>
-                    <div>
-                        <img loading="lazy" src="/resources/logo/Pim-Pão Banner.jpg"/>
-                        <h1>Panificadora e Confeitaria</h1>
-                        <p>Trazendo o melhor do artesanal.</p>
-                    </div>
-                </section>
-    
-                <section class="default-padding">
-                    <div class="two-columns-responsive">
-                        <div>
-                            <h2>Sobre nós</h2>
-                            <p>Com uma trajetória que ultrapassa os 27 anos, dedicamo-nos diariamente a cuidar com esmero e afeto de nossa comunidade.<br/><br/>
-                            Cada item produzido recebe atenção artesanal, com ingredientes especialmente escolhidos para tornar seus momentos mais agradáveis ao longo do dia.<br/><br/>
-                            Seja para um café matinal rápido, um encontro no lanche da tarde ou um pão fresquinho no final do dia, estamos à disposição, ansiosos para recebê-los com alegria e sofisticação em nossas lojas.<br/><br/>
-                            Esperamos ansiosos pela sua visita!</p>
-                        </div>
-                        <div>
-                            <img loading="lazy"loading="lazy"src="/resources/img/Pim Pão - 2021-08-01.jpg"/>
-                        </div>
-                    </div>               
-                </section>
-    
-                <section class="content-container">
-                    <h1>É sobre além de servir clientes,</h1>
-                    <p>É sobre a sua experiência no sabor.</p>
-                </section>
-    
-            </section>
-    
-            <section class="page" id="pg2" style="display: none;">
-                <section class="header-container">
-                    <img loading="lazy" class="main" src="/resources/img/Pim Pão - Bolo de Chocolate - 2020-05-26.jpg"/>
-                    <div>
-                        <img src="/resources/logo/Pim-Pão Banner.jpg"/>
-                        <h1>Cardápio</h1>
-                        <p>Veja no que podemos lhe fornecer com alegria e carinho. </p>
-                    </div>
-                </section>
+        </section>
 
-            </section>
-    
-            <section class="page" id="pg3" style="display: none;">
-                <div class="header-container">
-                    <img loading="lazy"class="main" src="/resources/img/Pim Pão - Blumenau - Sorriso 2021-04-23.jpg"/>
-                    <div>
-                        <img loading="lazy"src="/resources/logo/Pim-Pão Banner.jpg"/>
-                        <h1>Contato</h1>
-                        <p>Entre em contato ou venha em uma de nossas instalações..</p>
+        <section class="default-padding">
+            <div class="two-columns-responsive">
+                <div>
+                    <h2>Sobre nós</h2>
+                    <p>Com uma trajetória que ultrapassa os 27 anos, dedicamo-nos diariamente a cuidar com esmero e
+                        afeto de nossa comunidade.<br /><br /> Cada item produzido recebe atenção artesanal, com
+                        ingredientes especialmente escolhidos para tornar seus momentos mais agradáveis ao longo do
+                        dia.<br /><br /> Seja para um café matinal rápido, um encontro no lanche da tarde ou um pão
+                        fresquinho no final do dia, estamos à disposição, ansiosos para recebê-los com alegria e
+                        sofisticação em nossas lojas.<br /><br /> Esperamos ansiosos pela sua visita!</p>
+                </div>
+                <div>
+                    <img loading="lazy" src="/resources/img/Pim Pão - 2021-08-01.jpg" />
+                </div>
+            </div>
+        </section>
+
+        <section class="content-container">
+            <img class="logo" src="/resources/logo/Pim-Pão Banner - Transparent.png" />
+            <h1>É sobre além de servir clientes,</h1>
+            <p>É sobre a sua experiência no sabor.</p>
+        </section>
+
+    </section>
+
+    <section class="page" id="pg2" style="display: none;">
+        <section class="header-container">
+            <img loading="lazy" class="main" src="/resources/img/Pim Pão - Bolo de Chocolate - 2020-05-26.jpg" />
+            <div>
+                <img src="/resources/logo/Pim-Pão Banner.jpg" />
+                <h1>Cardápio</h1>
+                <p>Veja no que podemos lhe fornecer com alegria e carinho. </p>
+            </div>
+        </section>
+    </section>
+
+    <section class="page" id="pg3" style="display: none;">
+        <div class="header-container">
+            <img loading="lazy" class="main" src="/resources/img/Pim Pão - Blumenau - Sorriso 2021-04-23.jpg" />
+            <div>
+                <img loading="lazy" src="/resources/logo/Pim-Pão Banner.jpg" />
+                <h1>Contato</h1>
+                <p>Entre em contato ou venha em uma de nossas instalações..</p>
+            </div>
+        </div>
+
+        <div class="default-padding grid-list" style="min-height: 90vh; padding-top: 24px;">
+            <div>
+                <h1>Conheça nossas instalações e prove do nosso gostinho brasileiro</h1>
+                <p>Explore o encanto de nossos pães frescos e doces irresistíveis na Pim Pão.<br /> Deixe-se envolver
+                    pela magia dos sabores artesanais. Visite-nos hoje para uma experiência única de sabor e aroma!
+                </p>
+                <i>Clique para ser redirecionado para o Google Map</i>
+
+                <div>
+
+                </div>
+                <h2 style="margin-bottom: 0; text-align: center;">Sorriso, MT</h2>
+                <div class="grid-list">
+                    <div class="card" onclick="window.open('https://maps.app.goo.gl/BLFU3UWcFpYe8dtm6')">
+                        <img loading="lazy" src="/resources/img/Pim Pão - Brescansin 2022.png" />
+                        <h3>Av. Natalino João Brescansin, 1802 - Centro, Sorriso - MT</h3>
+                        <p>A Matriz da cidade</p>
+                    </div>
+                    <div class="card" onclick="window.open('https://maps.app.goo.gl/2JbJ7CBqyE834KWM9')">
+                        <img loading="lazy" src="/resources/img/Pim Pão - Blumenau- 2022.png" />
+                        <h3>Avenida Blumenau Sul, 2524 - Centro, Sorriso, MT</h3>
+                    </div>
+                    <div class="card" onclick="window.open('https://maps.app.goo.gl/MPnijh29f852Nx8Z6')">
+                        <img loading="lazy" src="/resources/img/Pim Pão - Brasil 2022.png" />
+                        <h3>Av. Brasil, 2204 - Centro Norte, Sorriso - MT</h3>
+
+
+                    </div>
+                    <div class="card" onclick="window.open('https://maps.app.goo.gl/XNFXVfRs27ThjvTV7')">
+                        <img loading="lazy" src="/resources/img/Pim Pão - Edgar - 2022.png" />
+                        <h3>Rua Edgar Garcia de Siqueira - Centro Sul, Sorriso - MT</h3>
                     </div>
                 </div>
-    
-                <div class="default-padding grid-list" style="min-height: 90vh; padding-top: 24px;">
-                    <div>
-                        <h1>Conheça nossas instalações e prove do nosso gostinho brasileiro</h1>
-                        <p>Explore o encanto de nossos pães frescos e doces irresistíveis na Pim Pão.<br/>
-                        Deixe-se envolver pela magia dos sabores artesanais. Visite-nos hoje para uma experiência única de sabor e aroma! </p>     
-                        <i>Clique para ser redirecionado para o Google Map</i>
-                        
-                        <div>
-                            
-                        </div>
-                        <h2 style="margin-bottom: 0; text-align: center;">Sorriso, MT</h2>
-                        <div class="grid-list">
-                                <div class="card" onclick="window.open('https://maps.app.goo.gl/BLFU3UWcFpYe8dtm6')">
-                                    <img loading="lazy" src="/resources/img/Pim Pão - Brescansin 2022.png"/>
-                                    <h3>Av. Natalino João Brescansin, 1802 - Centro, Sorriso - MT</h3>
-                                    <p>A Matriz da cidade</p>
-                                </div>
-                                <div class="card" onclick="window.open('https://maps.app.goo.gl/2JbJ7CBqyE834KWM9')">
-                                    <img loading="lazy" src="/resources/img/Pim Pão - Blumenau- 2022.png"/>
-                                    <h3>Avenida Blumenau Sul, 2524 - Centro, Sorriso, MT</h3>
-                                </div>
-                                <div class="card" onclick="window.open('https://maps.app.goo.gl/MPnijh29f852Nx8Z6')">
-                                    <img loading="lazy" src="/resources/img/Pim Pão - Brasil 2022.png"/>
-                                    <h3>Av. Brasil, 2204 - Centro Norte, Sorriso - MT</h3>
-                                </div>
-                                <div class="card" onclick="window.open('https://maps.app.goo.gl/XNFXVfRs27ThjvTV7')">
-                                    <img loading="lazy" src="/resources/img/Pim Pão - Edgar - 2022.png"/>
-                                    <h3>Rua Edgar Garcia de Siqueira - Centro Sul, Sorriso - MT</h3>
-                                </div>
-                           </div>
-                    </div>
-                </div>
-            </section>
+            </div>
+        </div>
+    </section>
 
-            <script>
-                function showPage(pageId) {
-                    // Oculta todas as páginas com uma transição suave
-                    document.querySelectorAll('.page').forEach(function(page) {
-                        page.style.opacity = '0';
-                        page.style.display = "none";
-                    });
-    
-                    // Mostra a página desejada com uma transição suave
-                    var nextPage = document.getElementById(pageId);
-                    nextPage.style.display = 'block';
-                    setTimeout(function() {
-                        nextPage.style.opacity = '1';
-                    }, 10); // Adiciona um pequeno atraso para garantir que a página esteja completamente exibida antes de aplicar a transição
-                    setTimeout(function() {
-                        window.scrollTo(0, 0); 
-                    }, 500); // Tempo correspondente à duração da transição (0.5s)
-                }
-                
-                getFragment() //When the page is started it will back 
-                function getFragment() {
-                    var fragmento = window.location.hash.substring(1);
+    <script>
+        function showPage(pageId) {
+            // Oculta todas as páginas com uma transição suave
+            document.querySelectorAll('.page').forEach(function (page) {
+                page.style.opacity = '0';
+                page.style.display = "none";
+            });
 
-                    // Switch para lidar com diferentes valores do fragmento
-                    switch (fragmento) {
-                        case '#':
-                            showPage('pg1')
-                            break;
-                        case 'menu':
-                            showPage('pg2')
-                            break;
-                        case 'contato':
-                            showPage('pg3')
-                            break;
+            // Mostra a página desejada com uma transição suave
+            var nextPage = document.getElementById(pageId);
+            nextPage.style.display = 'block';
+            setTimeout(function () {
+                nextPage.style.opacity = '1';
+            }, 10); // Adiciona um pequeno atraso para garantir que a página esteja completamente exibida antes de aplicar a transição
+            setTimeout(function () {
+                window.scrollTo(0, 0);
+            }, 500); // Tempo correspondente à duração da transição (0.5s)
+        }
 
-                        default:
-                            console.log('Fragmento desconhecido:', fragmento);
-                    }
-                }
-            </script>
-        </body>
-    </html>
+        getFragment() //When the page is started it will back 
+        function getFragment() {
+            var fragmento = window.location.hash.substring(1);
+
+            // Switch para lidar com diferentes valores do fragmento
+            switch (fragmento) {
+                case '#':
+                    showPage('pg1')
+                    break;
+                case 'menu':
+                    showPage('pg2')
+                    break;
+                case 'contato':
+                    showPage('pg3')
+                    break;
+
+                default:
+                    console.log('Fragmento desconhecido:', fragmento);
+            }
+        }
+    </script>
+</body>
+</html>

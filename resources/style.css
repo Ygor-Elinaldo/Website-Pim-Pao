@@ -1,40 +1,54 @@
 
+/* Fonts */
 @font-face {
     font-family: 'Nunito';
     src: url('/resources/fonts/Nunito-Font.ttf') format('truetype');
 }
 
+/* Reset styles */
 body {
     margin: 0;
     padding: 0;
-    font-family: Nunito;
+    font-family: 'Nunito', sans-serif;
     background-color: #552c34;
 }
 
+/* Common styles for images */
 img {
     border-radius: 24px;
 }
 
+/* Default padding for sections */
 .default-padding {
     padding: 64px;
 }
 
+/* Header and Content Container styles */
 .header-container,
 .content-container {
     display: flex;
-    min-height: 100svh;
+    min-height: 100vh;
     background: #552c34;
+}
+
+.content-container .logo {
+    object-fit: cover;
+    width: 25vw;
+    max-height: 100vh;
+    z-index: 1;
+    padding: 0;
 }
 
 .header-container img,
 .header-container .main {
     object-fit: cover;
-    width: 40svw;
-    max-height: 100svh;
+    width: 40vw;
+    max-height: 100vh;
+    border-radius: 0;
 }
 
 .header-container .main {
-    border-radius: 0 0 0 0;
+    border-radius: 0;
 }
 
 .header-container div {
@@ -75,6 +89,7 @@ img {
     justify-content: start;
     gap: 16px;
 }
+
 .header-container div div a {
     text-decoration: none;
     color: white;
@@ -84,12 +99,14 @@ img {
     border-radius: 14px;
     transition: all 0.3s ease-in-out;
 }
+
 .header-container div div a:hover {
     background-color: white;
     color: black;
     outline: 1px solid transparent;
 }
 
+/* Content Container background animation */
 .content-container {
     display: flex;
     height: 100vh;
@@ -110,7 +127,7 @@ img {
     right: 0;
     bottom: 0;
     left: 0;
-    background: linear-gradient(90deg, rgba(56, 44, 46, 0.7343312324929971) 0%, rgba(0, 0, 0, 0) 54%, rgba(82, 55, 17, 0.26934523809523814) 100%);
+    background: linear-gradient(90deg, rgba(56, 44, 46, 0.73) 0%, rgba(0, 0, 0, 0) 54%, rgba(82, 55, 17, 0.27) 100%);
 }
 
 @keyframes slideAnimation {
@@ -125,12 +142,14 @@ img {
     }
 }
 
-.content-container p, .content-container h1 {
+.content-container p,
+.content-container h1 {
     padding: 0;
     margin: 0;
     z-index: 1;
 }
 
+/* Top Bar styles */
 .top-bar {
     width: 100%;
     background-color: #44232a;
@@ -155,16 +174,19 @@ img {
     text-decoration: none;
     transition: all 0.3s ease-in-out;
 }
+
 .top-bar img {
     margin: 4px;
     width: 60px;
 }
+
 .top-bar a:hover {
     background-color: white;
     outline: white;
     color: black;
 }
 
+/* Two Columns Responsive layout */
 .two-columns-responsive {
     display: flex;
     align-items: center;
@@ -186,7 +208,7 @@ img {
     width: 100%;
 }
 
-
+/* Media Queries for smaller screens */
 @media (max-width: 768px) {
     .header-container {
         display: flex;
@@ -196,7 +218,7 @@ img {
     .header-container img,
     .header-container .main {
         object-fit: cover;
-        width: 100svw;
+        width: 100vw;
         height: 30vh;
     }
 
@@ -255,22 +277,18 @@ img {
 
     .card {
         margin: 0;
-
     }
 
     .card img {
         max-height: 180px;
     }
+
     .card:hover {
         transform: scale(1);
     }
 }
 
-
-.grid-list {
-    display: flexbox;
-}
-
+/* Grid List styles */
 .grid-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -278,74 +296,15 @@ img {
     align-content: flex-start;
 }
 
+/* Page Transition styles */
 .page {
     transition: opacity 0.5s ease-in-out;
     background-color: white;
 }
 
-.column {
-    float: left;
-    width: 50%;
-}
-
-.row {
-    padding: 64px;
-}
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
+/* Card styles */
 .card {
     height: max-content;
     outline: 1px solid #44232a;
-
     border-radius: 24px;
-    overflow: hidden;
-    padding-bottom: 4px;
-    background: none;
-    cursor: pointer;
-    transition: all 0.3s linear;
-    background-color: white;
-    margin-top: 8px;
-    margin-bottom: 8px;
-}
-
-.card h3, .card p {
-    padding-left: 8px;
-    padding-right: 8px;
-}
-
-.card img {
-    width: 100%;
-    height: 350px;
-    object-fit: cover;
-}
-
-.card:hover {
-    transform: scale(1.05);
-}
-
-.menu {
-
-}
-
-.menu img {
-    
-}
-.menu div {
-    padding: 18px;
-    outline: 1px solid #44232a;
-    border-radius: 12px;
-    margin: 10px;
-}
-.menu div h1 {
-    font-size: large;
-    margin-top: 0;
-    margin-bottom: 14px;
-}
-.menu div p {
-    margin: 0;
-}
+   
