@@ -114,7 +114,6 @@ img {
 /* Content Container background animation */
 .content-container {
     display: flex;
-    height: 100vh;
     flex-direction: column;
     justify-content: center;
     padding: 64px;
@@ -127,6 +126,7 @@ img {
 
 .content-container {
     background: url("/resources/img/20231122_142337.png") center/cover no-repeat;
+    min-height: 90vh;
 }
 
 .content-container::before {
@@ -160,7 +160,7 @@ img {
     z-index: 1;
 }
 
-.content-container button {
+.content-container a {
     width: max-content;
     margin-top: 64px;
     margin-bottom: 10px;
@@ -172,9 +172,10 @@ img {
     color: #44232a;
     transition: all 0.1s ease-in-out;
     cursor: pointer;
+    text-decoration: none;
 }
 
-.content-container button:hover {
+.content-container a:hover {
     transform: scale(1.2);
 }
 
@@ -344,6 +345,30 @@ img {
 }
 
 
+.locationContainer {
+    position: relative;
+    width: 100%;
+    min-height: 80vh; /* Ajuste conforme necessário */
+    overflow: hidden;
+    
+}
+
+.locationContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que a imagem cubra completamente o contêiner */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.locationContainer div {
+    position: relative;
+    z-index: 1;
+    padding: 20px; /* Adicione padding conforme necessário */
+    color: white; /* Cor do texto, ajuste conforme necessário */
+    /* Outras propriedades de estilo */
+}
 
 /* Media Queries for smaller screens */
 @media (max-width: 768px) {
