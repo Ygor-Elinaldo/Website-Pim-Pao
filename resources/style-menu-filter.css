@@ -1,0 +1,71 @@
+:root {
+    
+}
+
+.filter-options {
+    display: flex;
+    gap: 10px;
+}
+.filter-options button {
+    
+    border: none;
+    padding: 12px;
+    border-radius: 12px;
+    background: #F0F0F0;
+    transition: background-color 0.2s linear;
+
+    cursor: pointer;
+}
+.filter-options button:hover {
+    background-color: #C0C0C0;
+}
+.filter-options .active {
+    background-color: #DCDCDC;
+    outline: 1px solid #44232a;
+}
+
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 18px;
+    
+    transition: all 0.5s ease-in-out;
+}
+
+.item-container {
+    padding: 14px;
+    border-radius: 18px;
+    overflow: hidden;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.item-container h1 {
+    font-size: 1.4em;
+    margin: none;
+}
+
+.item-container p {
+    margin: none;
+    padding: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.item-container img {
+    width: 550px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 24px;
+}
+
+.item-container {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.item-container.show {
+    opacity: 1;
+}
