@@ -3,11 +3,11 @@
 }
 
 .filter-options {
-    display: flex;
+    display: flexbox;
     gap: 10px;
 }
 .filter-options button {
-    
+    margin: 8px;
     border: none;
     padding: 12px;
     border-radius: 12px;
