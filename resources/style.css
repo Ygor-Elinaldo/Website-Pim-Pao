@@ -30,9 +30,8 @@ img {
 /* Header and Content Container styles */
 .header-container {
     display: flex;
-    min-height: 99vh;
+    min-height: 100vh;
     background: #552c34;
-    border-radius: 24px;
     overflow: hidden;
 }
 
@@ -40,7 +39,7 @@ img {
 .header-container .main {
     object-fit: cover;
     width: 40vw;
-    height: 99svh;
+    height: 100vh;
 }
 
 .header-container .main {
@@ -106,8 +105,7 @@ img {
 /* Top Bar styles */
 .top-bar {
     width: 100%;
-    background-color: #44232a;
-    color: white;
+    background-color: transparent;
     display: flex;
     justify-content: flex-end;
     z-index: 100;
@@ -115,8 +113,7 @@ img {
     top: 0;
     width: 100%;
     z-index: 1000;
-    border-radius: 0 0 8px 8px;
-    justify-content: center;
+    transition: all 0.4s ease-in-out;
 }
 
 .top-bar a {
@@ -124,7 +121,6 @@ img {
     background-color: transparent;
     border-radius: 12px;
     padding: 8px;
-    color: white;
     text-decoration: none;
     transition: all 0.3s ease-in-out;
 }
@@ -139,6 +135,37 @@ img {
     outline: white;
     color: black;
 }
+
+/* White variation */
+.top-bar-white {
+    color: white;
+}
+
+.top-bar-white a {
+    color: white;
+}
+
+.top-bar-white a:hover {
+    background-color: white;
+    outline: white;
+    color: black;
+}
+
+/* Black variation */
+.top-bar-black {
+    color: black;
+}
+
+.top-bar-black a {
+    color: black;
+}
+
+.top-bar-black a:hover {
+    background-color: black;
+    outline: white;
+    color: white;
+}
+
 
 /* Two Columns Responsive layout */
 .two-columns-responsive {

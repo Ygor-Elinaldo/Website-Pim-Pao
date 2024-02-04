@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <div class="top-bar">
+    <div class="top-bar top-bar-white" id="topBar">
         <a id="navigationHome" onclick="showPage('pg1')" href="#">Home</a>
         <a id="navigationCardapio" onclick="showPage('pg2')" href="#menu">Cardápio</a>
         <a id="navigationContato" onclick="showPage('pg3')" href="#contato">Contato</a>
@@ -67,10 +67,9 @@
         </section>
 
         <section class="header-container">
-            <img loading="lazy" class="main" src="/resources/img/headers/Pim Pão - Interior 2021-08-01.jpg" />
+            <img loading="lazy" class="main" src="/resources/img/Embalagem - Foto 366800951_17995377443310593_3302200519564041503_n.jpg" />
             <div style="padding: 38px;">
-                <img loading="lazy" src="/resources/logo/Pim-Pão Banner.jpg" />
-                <h2>Porque nos escolher?</h2>
+                <h1>Porque nos escolher?</h1>
                 <p>Somos uma renomada rede de padarias presente em Sorriso e Sinop, dedicada a proporcionar qualidade excepcional aos nossos estimados clientes. </p>
                 <p>Nosso compromisso incessante com aprimoramento e excelência reflete não apenas no atendimento às necessidades de indivíduos e empresas, mas, sobretudo, na arte de criar experiências únicas especialmente para você.</p>
             </div>
@@ -223,6 +222,39 @@
                     console.log('Fragmento desconhecido:', fragmento);
             }
         }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const topBar = document.getElementById('topBar');
+            const headerContainers = document.querySelectorAll('.header-container');
+
+            window.addEventListener('scroll', function () {
+                verifyTopBarOver();
+            });
+
+            verifyTopBarOver()
+            function verifyTopBarOver() {
+                let isTopBarOverHeader = false;
+
+                headerContainers.forEach(function (headerContainer) {
+                    const rectTopBar = topBar.getBoundingClientRect();
+                    const rectHeader = headerContainer.getBoundingClientRect();
+
+                    // Verifica se a topBar está sobre o headerContainer
+                    if (rectTopBar.bottom > rectHeader.top && rectTopBar.top < rectHeader.bottom) {
+                        isTopBarOverHeader = true;
+                    }
+                });
+
+                // Alternar visibilidade dos elementos com base na condição 
+                if (isTopBarOverHeader) {
+                    topBar.classList.add("top-bar-white");
+                    topBar.classList.remove("top-bar-black");
+                } else {
+                    topBar.classList.remove("top-bar-white");
+                    topBar.classList.add("top-bar-black");
+                }
+            }
+        });
 
     </script>
 </body>
