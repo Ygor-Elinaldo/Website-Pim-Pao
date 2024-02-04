@@ -101,22 +101,21 @@ img {
     color: black;
     outline: 1px solid transparent;
 }
-
 /* Top Bar styles */
 .top-bar {
     width: 100%;
     background-color: transparent;
     display: flex;
     justify-content: flex-end;
-    z-index: 100;
     position: fixed;
     top: 0;
-    width: 100%;
     z-index: 1000;
     transition: all 0.4s ease-in-out;
+    margin-right: 24px;
 }
 
-.top-bar a {
+.top-bar a,
+.top-bar img {
     margin: 4px;
     background-color: transparent;
     border-radius: 12px;
@@ -126,43 +125,33 @@ img {
 }
 
 .top-bar img {
-    margin: 4px;
     width: 60px;
 }
 
 .top-bar a:hover {
     background-color: white;
-    outline: white;
     color: black;
 }
 
-/* White variation */
-.top-bar-white {
-    color: white;
-}
+/* White & Black variations */
 
 .top-bar-white a {
     color: white;
 }
 
+.top-bar-black {
+    background-color: #44232a;
+}
+.top-bar-black a {
+    color: white;
+}
 .top-bar-white a:hover {
     background-color: white;
-    outline: white;
-    color: black;
-}
-
-/* Black variation */
-.top-bar-black {
-    color: black;
-}
-
-.top-bar-black a {
     color: black;
 }
 
 .top-bar-black a:hover {
     background-color: black;
-    outline: white;
     color: white;
 }
 

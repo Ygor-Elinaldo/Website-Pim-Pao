@@ -14,26 +14,6 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-// Rota para fornecer dados JSON
-app.get('/api/items', (req, res) => {
-  console.log('Recebida solicitação para /api/items');
-  
-  const filePath = path.join(__dirname, 'menuItems.json');
-
-  // Lê o arquivo JSON
-  fs.readFile(filePath, 'utf8', (err, data) => {
-    if (err) {
-      console.error('Erro ao ler o arquivo JSON:', err);
-      res.status(500).json({ error: 'Erro ao obter dados do servidor' });
-      return;
-    }
-
-  const items = JSON.parse(data);
-
-  console.log('Enviando resposta JSON:', items);
-  res.json(items);
-  })
-})
 
 app.use((req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));  

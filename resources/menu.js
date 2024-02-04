@@ -6,7 +6,7 @@ function createLayout() {
     var optionsMenu = document.getElementById("optionsMenu");
 
     // Obtenha a lista de itens do servidor
-    fetch('/api/items')
+    fetch('/resources/data/Items do Menu.json')
         .then(response => response.json())
         .then(data => {
             itemsJSON = data;
@@ -18,7 +18,7 @@ function createLayout() {
             var uniqueCategories = [...new Set(itemsJSON.map(item => item.categoria))];
 
             // Adicione "All" à lista de categorias
-            uniqueCategories.unshift("All");
+            uniqueCategories.unshift("Todos");
 
             // Crie os botões de filtro com base nas categorias
             uniqueCategories.forEach(function (category) {
