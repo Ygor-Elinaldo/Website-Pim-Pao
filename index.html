@@ -24,7 +24,7 @@
     </div>
 
     <section class="page" id="pg1">
-        <section class="header-container">
+        <section class="header-container full-container">
             <img loading="lazy" class="main" src="/resources/img/Pim Pão - 2021-08-01.jpg" />
             <div>
                 <img loading="lazy" src="/resources/logo/Pim-Pão Banner.jpg" />
@@ -67,7 +67,7 @@
             </div>
         </section>
 
-        <section class="header-container">
+        <section class="header-container full-container">
             <img loading="lazy" class="main" src="/resources/img/items/Pim Pão - Pão Francês.jpg" />
             <div style="padding: 38px;">
                 <h1>Porque nos escolher?</h1>
@@ -79,7 +79,7 @@
     </section>
 
     <section class="page" id="pg2" style="display: none;">
-        <section class="header-container">
+        <section class="header-container full-container">
             <img loading="lazy" class="main" src="/resources/img/Pim Pão - Bolo de Chocolate - 2020-05-26.jpg" />
             <div>
                 <img src="/resources/logo/Pim-Pão Banner.jpg" />
@@ -142,17 +142,15 @@
                 </div>
             </div>
 
-            <div class="grid-list-two">
-                <div class="destaqueContainerVariant" style="height: 80vh; margin-bottom: 0;">
-                    <img src="/resources/img/headers/Pim Pão - Sinop 2019-01-20.jpg" style="object-fit: cover;"/>
-                    <h1><small>Visite nossas lojas para descobrir mais dos</small><br/><b>Sabores irresistíveis.</b></h1>
-                </div>
+            <div class="destaqueContainerVariant" style="height: 80vh; margin-bottom: 0;">
+                <img src="/resources/img/headers/Pim Pão - Sinop 2019-01-20.jpg" style="object-fit: cover;"/>
+                <h1><small>Visite nossas lojas para descobrir mais dos</small><br/><b>Sabores irresistíveis.</b></h1>
             </div> 
         </section>
         
-        <section class="default-padding">
+        <section class="default-padding" style="margin: 0; padding-top: 0;">
 
-            <h1>Veja o que mais podemos lhe ofereceer</h1>
+            <h1>Veja o que mais podemos lhe oferecer</h1>
 
             <div id="optionsMenu" class="filter-options">
             </div>
@@ -162,15 +160,14 @@
             </div>
 
 
-
         </section>
 
         
     </section>
 
     <section class="page" id="pg3" style="display: none;">
-        <div class="header-container">
-            <img loading="lazy" class="main" src="/resources/img/Pim Pão - Blumenau - Sorriso 2021-04-23.jpg" />
+        <div class="header-container full-container">
+            <img loading="lazy" class="main" src="/resources/img/Pim Pão - Sorriso Matriz Interior.jpg" />
             <div>
                 <img loading="lazy" src="/resources/logo/Pim-Pão Banner.jpg" />
                 <h1>Contato</h1>
@@ -178,15 +175,60 @@
             </div>
         </div>
 
-        <div class="default-padding" style=" padding-top: 24px;">
+        <div class="default-padding">
             <div>
                 <h1>Conheça nossas instalações e prove do nosso gostinho brasileiro</h1>
                 <p>Explore o encanto de nossos pães frescos e doces irresistíveis na Pim Pão.<br /> Deixe-se envolver
                     pela magia dos sabores artesanais. Visite-nos hoje para uma experiência única de sabor e aroma!
                 </p>
-
             </div>
         </div>
+
+            <div class="simplebackground default-padding full-container">
+                <h2>Sorriso, MT</h2>
+                <p>Estamos presentes em quatro lugares na cidade.</p>
+
+                <div class="midiaButtons">
+                    <a class="midia" href="https://www.instagram.com/pimpaosorriso/">
+                        <img src="/resources/img/icon/Instagram_logo_2022.png"/>
+                    </a>
+                </div>
+        
+                <div class="containerLocationList"  style="margin-top: 64px;">
+
+                    <a class="containerLocation">
+                        <img class="place" src="/resources/img/Pim Pão - Sorriso Matriz (Vista de Fora - Topo) 2022-04-24 - Inteira.jpg">
+                        <div class="top">
+                            <h3>Avenida Natalino João Brescansin, 1802</h3>
+                            <p>A matriz principal da cidade.</p>
+                        </div>
+                    </a>
+                    
+                    <a class="containerLocation">
+                        <img class="place" src="/resources/img/Pim Pão - Sorriso Matriz (Vista de Fora - Topo) 2022-04-24 - Inteira.jpg">
+                        <div class="top">
+                            <h3>Avenida Natalino João Brescansin, 1802</h3>
+                            <p>A matriz principal da cidade.</p>
+                        </div>
+                    </a>
+                    
+                    <a class="containerLocation">
+                        <img class="place" src="/resources/img/Pim Pão - Sorriso Matriz (Vista de Fora - Topo) 2022-04-24 - Inteira.jpg">
+                        <div class="top">
+                            <h3>Avenida Natalino João Brescansin, 1802</h3>
+                            <p>A matriz principal da cidade.</p>
+                        </div>
+                    </a>
+
+                    <a class="containerLocation">
+                        <img class="place" src="/resources/img/Pim Pão - Sorriso Matriz (Vista de Fora - Topo) 2022-04-24 - Inteira.jpg">
+                        <div class="top">
+                            <h3>Avenida Natalino João Brescansin, 1802</h3>
+                            <p>A matriz principal da cidade.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
     </section>
 
     <script>
@@ -194,7 +236,7 @@
         getFragment()
         document.addEventListener('DOMContentLoaded', function () {
             const topBar = document.getElementById('topBar');
-            const headerContainers = document.querySelectorAll('.header-container');
+            const headerContainers = document.querySelectorAll('.full-container');
 
             window.addEventListener('scroll', function () {
                 verifyTopBarOver();

@@ -250,38 +250,100 @@ img {
 }
 
 
-.locationContainer {
-    position: relative;
-    width: 100%;
-    min-height: 80vh; /* Ajuste conforme necessário */
-    overflow: hidden;
-    
-}
-
-.locationContainer img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Garante que a imagem cubra completamente o contêiner */
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-.locationContainer div {
-    position: relative;
-    z-index: 1;
-    padding: 20px; /* Adicione padding conforme necessário */
-    color: white; /* Cor do texto, ajuste conforme necessário */
-    /* Outras propriedades de estilo */
-}
-
 .grid-list {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     gap: 20px;
     justify-content: center;
-    padding: 20px;
-  }
+}
+.containerLocationList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    justify-content: center;
+    transition: all 0.4s ease-in-out;
+    color: black;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+}
 
+.containerLocation {
+    width: 100%;
+    height: max-content;
+    color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+}
+
+.containerLocation img.place {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px; /* Apply the same border-radius as the container */
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+.containerLocation::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    z-index: 1;
+}
+
+
+.containerLocation div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 18px;
+    padding-top: 60%;
+}
+
+.containerLocation h3,
+.containerLocation p {
+    z-index: 1;
+}
+.containerLocation h3 {
+    margin-top: 8px;
+    margin-bottom: 0px;
+}
+.containerLocation p {
+    margin-top: 0px;
+}
+
+/* Add hover effect to containerLocation */
+.containerLocation:hover {
+    transform: scale(1.05);
+}
+
+.simplebackground {
+    color: white;
+    background-color: #552c34;
+}
+
+.midiaButtons {
+    display: block;
+    display: flex;
+    position: relative;
+    z-index: 1;
+}
+.midiaButtons .midia {
+    width: 45px;
+    height: 45px;
+}
+.midiaButtons .midia img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    z-index: 1;
+}
 
 @media (max-width: 1232px) {
     .grid-list {
