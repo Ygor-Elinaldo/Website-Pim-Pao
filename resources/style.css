@@ -276,6 +276,7 @@ img {
     overflow: hidden;
     position: relative;
     transition: all 0.5s ease-in-out;
+    text-decoration: none;
 }
 
 .containerLocation img.place {
@@ -333,17 +334,36 @@ img {
     display: flex;
     position: relative;
     z-index: 1;
+    gap: 12px;
 }
 .midiaButtons .midia {
-    width: 45px;
-    height: 45px;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    border-radius: 24px;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
 }
 .midiaButtons .midia img {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     object-fit: cover;
     z-index: 1;
+    border-radius: none;
+    transition: all 0.3s ease-in-out;
 }
+
+.midiaButtons .midia:hover,
+.midiaButtons .midia:focus{
+    border: none;
+    outline: none;
+    outline: 1px solid #ffffff
+}
+.midiaButtons .midia:hover img,
+.midiaButtons .midia:focus img {
+    transform: scale(1.39);
+}
+
 
 @media (max-width: 1232px) {
     .grid-list {
