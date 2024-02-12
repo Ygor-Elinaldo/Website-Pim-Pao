@@ -364,7 +364,11 @@ img {
     color: white;
     background-color: #552c34;
 }
-
+.limitlySize {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+}
 .midiaButtons {
     display: block;
     display: flex;
