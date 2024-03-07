@@ -184,6 +184,7 @@ img {
 
 /* Destaque Container */
 .destaqueContainer,
+.destaqueContainerMenuHigh,
 .destaqueContainerVariant {
     position: relative;
     height: 0;
@@ -194,7 +195,10 @@ img {
     transition: transform 0.9s linear;
     padding-bottom: 90%;
 }
-
+.destaqueContainerMenuHigh {
+    width: 100%; 
+    grid-column: span 2;
+}
 .destaqueContainerVariant {
     padding-bottom: 0;
     width: 100%;
@@ -237,13 +241,12 @@ img {
     margin: 0;
     position: absolute;
     bottom: 20px;
-    /* Ajuste conforme necessário */
     left: 20px;
-    /* Ajuste conforme necessário */
     font-size: 3em;
     z-index: 2;
     color: #ffffff;
     transition: opacity 1s ease-in-out;
+    font-size: 3em;
 }
 
 .destaqueContainer h1 small,
@@ -266,16 +269,26 @@ img {
     justify-content: center;
     grid-auto-rows: 600px; /* Alturas automáticas das linhas */
 
-    @media (max-width: 922px) {
-        display: flex;   
-        flex-direction: column;
+    @media (max-width: 768px) {
+        grid-template-columns: repeat(2, 1fr); /* Três colunas fixas */
+        grid-auto-rows: 350px; /* Alturas automáticas das linhas */
     }
+
+    @media (max-width: 4258px) {
+        .destaqueContainerMenuHigh,
+        .destaqueContainer {
+            h1 {
+                font-size: 1.45em;
+            }
+        }
+    }
+
 }
+    
+
 .grid-list-menu *.destaqueContainer {
     padding-bottom: 0;
     height: 100%;
-
-    
 }
 
 .containerLocationList {
