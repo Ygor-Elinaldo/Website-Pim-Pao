@@ -18,11 +18,11 @@
 </head>
 
 <body>
-    <div class="top-bar top-bar-white" id="topBar">
+    <nav class="top-bar top-bar-white" id="topBar">
         <a id="navigationHome" onclick="showPage('pg1')" href="#">Home</a>
         <a id="navigationCardapio" onclick="showPage('pg2')" href="#menu">Cardápio</a>
         <a id="navigationContato" onclick="showPage('pg3')" href="#contato">Contato</a>
-    </div>
+    </nav>
 
     <section class="page" id="pg1">
         <section class="header-container full-container">
@@ -49,9 +49,6 @@
                 <div>
                     <img loading="lazy" src="/resources/img/Pim Pão - Sorriso Matriz Interior.webp" />
                 </div>
-            </div>
-
-            <div class="grid-list limitlySize" style="align-items: center; ">
             </div>
             
         </section>
@@ -82,10 +79,10 @@
                         
                 <h1 style="text-align: center; padding: 0; margin-top: 30px; margin-bottom: 10px;">Veja os mais preferidos</h1>
 
-                <div class="grid-list-menu" style="margin-top: 0;">
-                    <div class="destaqueContainer destaqueContainerMenuHigh">
-                        <video class="back" src="/resources/video/20240307_111813.mp4" type="video/mp4" autoplay loop muted style="width: 100%; border-radius: 28px;"/>
-                        <h1><small>Uma felicidade em um </small><br/> <b>Cupcake.</b></h1>
+                <div class="grid-list-menu" style="margin-top: 0; height: max-content;">
+                    <div class="destaqueContainer --highlight">
+                        <video class="back" src="/resources/video/20240307_111813.mp4" type="video/mp4" autoplay loop muted style="width: 100%; border-radius: 28px;"></video>
+                        <h1><b>Especiais da casa.</b></h1>
                     </div>
 
                     <div class="destaqueContainer">
@@ -98,20 +95,19 @@
                         <h1><small>Experimente um incrível</small><br/><b>Sanduiche de Pão de Queijo.</b></h1>
                     </div>
                     
-                    <div class="destaqueContainer destaqueContainerMenuHigh">
+                    <div class="destaqueContainer --highlight">
                         <img class="back" loading="lazy" src="/resources/img/headers/Cannoli - 20240126_153227.webp"/>
                         <h1><small>Conheça os nossos tão doce</small><br/><b>Cannolis.</b></h1>
+                    </div>
+
+                    <div class="destaqueContainer --highlight">
+                        <img class="back" loading="lazy" src="/resources/img/headers/20240201_152318.webp"/>
+                        <h1><small>Experimente o </small><br/> <b>Pão Italiano.</b></h1>
                     </div>
 
                     <div class="destaqueContainer">
                         <img class="back" loading="lazy" src="/resources/img/headers/Cappuccino.webp"/>
                         <h1><small>Amantes de amor com</small><br/><b>Cappuccino.</b></h1>
-                    </div>
-
-
-                    <div class="destaqueContainer">
-                        <img class="back" loading="lazy" src="/resources/img/headers/20240201_152318.webp"/>
-                        <h1><small>Experimente o </small><br/> <b>Pão Italiano.</b></h1>
                     </div>
 
 
@@ -125,16 +121,16 @@
                         <h1><small>Com um bom</small><br/><b>Pastel.</b></h1>
                     </div>
 
-                    <div class="destaqueContainer destaqueContainerMenuHigh">
+                    <div class="destaqueContainer">
                         <img class="back" loading="lazy" src="/resources/img/headers/Doces.webp"/>
                         <h1><small>Para toda a alegria tem um</small><br/><b>Docinho.</b></h1>
                     </div>
 
-                </div>
+                    <div class="destaqueContainer --threecolumns" >
+                        <img class="back" loading="lazy" src="/resources/img/Pim Pão - Sorriso Matriz Interior.webp" style="object-fit: cover;"/>
+                        <h1>Visite nossas lojas para descobrir mais dos<br/><b>Sabores irresistíveis.</b></h1>
+                    </div>
 
-                <div class="destaqueContainerVariant" style="height: 80vh; margin-bottom: 0; margin-top: 124px;">
-                    <img class="back" loading="lazy" src="/resources/img/Pim Pão - Sorriso Matriz Interior.webp" style="object-fit: cover;"/>
-                    <h1><small>Visite nossas lojas para descobrir mais dos</small><br/><b>Sabores irresistíveis.</b></h1>
                 </div>
 
             </section>
