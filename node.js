@@ -4,7 +4,7 @@ const app = express();
 const path = require('path');
 const fs = require("fs")
 // Configuração da porta
-const port = 3000;
+const port = 80;
 
 
 app.use('/resources', express.static(path.join(__dirname, 'resources')));
