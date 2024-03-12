@@ -14,6 +14,11 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
 });
 
+// Rota padrão
+app.get('/policy', (req, res) => {
+  res.sendFile(path.join(__dirname, 'privacy.html'));
+});
+
 
 app.use((req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));  
