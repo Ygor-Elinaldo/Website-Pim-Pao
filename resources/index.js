@@ -164,7 +164,6 @@ window.onload = function () {
     menuLayoutModule.createLayout();
 };
 
-
 function showPage(pageId) {
     // Oculta todas as páginas com uma transição suave
     document.querySelectorAll('.page').forEach(function (page) {
@@ -172,16 +171,21 @@ function showPage(pageId) {
         page.style.display = "none";
     });
 
-    // Mostra a página desejada com uma transição suave
+    
     var nextPage = document.getElementById(pageId);
     nextPage.style.display = 'block';
     setTimeout(function () {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+        
         nextPage.style.opacity = '1';
-    }, 10); // Adiciona um pequeno atraso para garantir que a página esteja completamente exibida antes de aplicar a transição
-    setTimeout(function () {
-        window.scrollTo(0, 0);
-    }, 500); // Tempo correspondente à duração da transição (0.5s)
+        
+        
+    }, 10); 
 }
+
 
 getFragment() //When the page is started it will back 
 function getFragment() {
